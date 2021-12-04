@@ -1,38 +1,271 @@
-.App {
+/* * {
+  outline: solid 1px red;
+} */
+* {
+  box-sizing: border-box;
+}
+span {
+  font-weight: bold;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    #d18e6b,
+    #d99d6c,
+    #dfad6e,
+    #e3be71,
+    #e3cf78,
+    #d8da80,
+    #cce58b,
+    #bef09a,
+    #a4f5ae,
+    #8af8c5,
+    #72fadd,
+    #5ffbf4
+  );
+  margin: auto;
+}
+h1 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background-image: linear-gradient(
+    to right bottom,
+    #462c2f,
+    #854430,
+    #ac6f0b,
+    #a7aa00,
+    #54eb12
+  );
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  overflow: clip;
+  flex: 1 1 auto;
+}
+
+#Add {
+  margin: 0 auto;
+}
+#add-item {
+  padding: 15px;
+
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto;
+}
+
+#selected {
+  font-size: 4em;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  display: block;
+  width: 80%;
+  margin: 19px auto;
+  padding: 50px 15px;
+  border: 2px solid rgb(61, 113, 122);
+  font-family: "Petemoss", cursive;
+  overflow: auto;
+}
+.btn {
+  margin-top: 5px;
+  justify-content: space-between;
+  
+  
+}
+#btn-select {
+  margin-right: 10px;
+}
+footer {
+  flex: 0 0 auto;
+    padding-bottom: 5px;
+    margin-top: auto;
+}
+input {
+  font-size: 100px;
+  font-family: monospace;
+}
+button {
+  color: white;
+  border: solid black;
+  font-size: 16px;
+  background-color: rgb(19, 17, 17);
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(173, 47, 28);
+}
+
+#display-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 50;
+}
+#display-list li {
+  text-align: center;
+  align-items: center;
+}
+ol{
+  overflow: auto;
+ 
+}
+#display-list ol {
+  align-items: center;
+  text-align: center;
+  list-style-position: inside;
+  
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.borderRed {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  display: block;
+  width: 80%;
+  margin-top: 12px;
+  margin-right: 40px;
+  padding: 10px 15px;
+  border: 2px solid grey;
+  height: 80px;
+}
+
+#add-item {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  border: 1px solid grey;
+  margin: 2px auto;
+  width: 90%;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#selected {
+  align-items: center;
+  margin: auto;
+}
+
+#submit-item {
   color: white;
+  border: solid black;
+  font-size: 16px;
+  background-color: black;
+  border-radius: 8px;
+  padding-bottom: 25px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+}
+.item-warning {
+  font-size: 4em;
+  font-family: "Petemoss", cursive;
+  margin-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (max-width: 800px) {
+  body {
+    margin: auto;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    background-image: linear-gradient(
+      to right,
+      #f9deee,
+      #f0d0ed,
+      #e1c4ee,
+      #ccb9f1,
+      #b0b1f5,
+      #9cb7fa,
+      #86bcfc,
+      #6fc1fb,
+      #79d1f9,
+      #8edef5,
+      #aaebf2,
+      #c7f6f3
+    );
   }
-  to {
-    transform: rotate(360deg);
+  .App {
+    height: 100vh;
+    width: 100%;
   }
+
+  button {
+    color: white;
+    border: solid black;
+    font-size: 16px;
+    background-color: rgb(38, 15, 168);
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: rgb(173, 47, 28);
+  }
+
+  main {
+    overflow: auto;
+    flex: 1 1 auto;
+  }
+
+  footer {
+    flex: 0 0 auto;
+    padding-bottom: 5px;
+    margin-top: auto;
+    
+  }
+
+  #display-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #display-list li {
+    text-align: center;
+  }
+  #display-list ol {
+    align-items: center;
+    text-align: center;
+    list-style-position: inside;
+  }
+
+  header {
+    flex: 0 0 auto;
+  }
+}
+#submit-item {
+  color: white;
+  border: solid black;
+  font-size: 16px;
+  background-color: rgb(83, 46, 94);
+  border-radius: 8px;
+  padding-bottom: 25px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+}
+#submit-item:hover {
+  background-color: rgb(173, 47, 28);
 }
