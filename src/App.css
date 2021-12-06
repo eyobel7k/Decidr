@@ -23,7 +23,7 @@ body {
     #72fadd,
     #5ffbf4
   );
-  margin: auto;
+  /* margin: auto; */
 }
 h1 {
   text-align: center;
@@ -32,6 +32,7 @@ h1 {
   text-align: center;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 header {
@@ -49,7 +50,7 @@ header {
 }
 
 main {
-  overflow: clip;
+  overflow: auto;
   flex: 1 1 auto;
 }
 
@@ -191,7 +192,7 @@ form {
   body {
     margin: auto;
 
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       to right,
       #f9deee,
       #f0d0ed,
@@ -205,7 +206,7 @@ form {
       #8edef5,
       #aaebf2,
       #c7f6f3
-    );
+    ); */
   }
   .App {
     height: 100vh;
