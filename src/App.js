@@ -52,7 +52,7 @@ function App() {
       />
 
       <main>
-      {listContainer.length < 2 && (
+        {listContainer.length < 2 && (
           <div className="item-warning">{itemWarning}</div>
         )}
 
